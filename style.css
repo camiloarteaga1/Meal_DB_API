@@ -1,0 +1,30 @@
+#search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+  margin: auto;
+}
+
+#search-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background: none;
+}
+
+#search-button img {
+  width: 20px;
+  height: 20px;
+}
+
+#search-input,
+#search-options {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+}

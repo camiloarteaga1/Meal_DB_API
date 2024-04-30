@@ -1,3 +1,3 @@
-#TheMealDB - Integration
+# SkyFood a TheMealDB API Integration
 
-Juan Camilo Arteaga Ibarra
+By: Juan Camilo Arteaga Ibarra
