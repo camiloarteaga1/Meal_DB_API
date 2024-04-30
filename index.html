@@ -1,42 +1,117 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Menu</title>
-    <link rel="stylesheet" href="sytles.css" />
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
-    <script src="java.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <main>
-      <div class="search">
-        <h1 id="titulo">SkyFood</h1>
+<html lang="es" dir="ltr">
 
-        <input type="text" placeholder="enter a plate" spellcheck="false" />
-        <button><img src="images/search.png" /></button>
-      <!-- Menú desplegable con las opciones de búsqueda -->
-      <select id="opcionBusqueda">
-        <option value="nombre">Meal name</option>
-        <option value="categoria">Category</option>
-        <option value="ingrediente">Ingridient</option>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sky food</title>
+  <link rel="stylesheet" href="style1.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <meta name="author" content="Camilo Arteaga">
+  <link rel="icon" href="https://img.icons8.com/material/24/beach--v1.png" type="image/x-icon">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="menu">
+        <div class="logo">
+          <a href="#">Sky Food</a>
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#finder">Finder</a></li>
+          <li><a href="#about">About</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="img"></div>
+  <div class="center">
+    <div class="title">Sky Food</div>
+    <div class="sub_title">"Souls in your tongue"</div>
+    <div class="text">
+      Find recipes from all over the world and enjoy the best dishes from the best chefs.
+    </div>
+  </div>
+
+  <div class="finder-container" id="finder">
+    <div class="finder">
+      <input class="input-plate" type="text" placeholder="Search your meal..." spellcheck="false"/>
+      <button id="search-field-btn" class="btn"><img src="/public/assets/imgs/magnifier.png" /></button>
+      <select id="option">
+        <option value="name">Meal name</option>
+        <option value="category">Category</option>
+        <option value="ingredient">Principal ingredient</option>
         <option value="area">Area</option>
       </select>
     </div>
-      <!-- Contenedor de los resultados de la búsqueda -->
-      <div class="error">
-        <p>No recipes where found. Try another meal.</p>
-      </div>
-      <div class="menu">
-      </div>
-      <div class="menu1">
-      </div>
-    </main>
-    <footer class="footer_section"><div class="">
-      <p>© 2024 Food Sky</p>
+  </div>
+
+  <!-- Container for image grid -->
+    <div class="container">
+        <div class="image-container">
+            <a href="public/Nueva_York.html">
+                <img src="/public/assets/img/New_york.jpg" alt="Place 1">
+                <div class="image-overlay">
+                    <h2>Nueva York</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="public/Atenas.html">
+                <img src="/public/assets/img/Atenas.jpg" alt="Place 2">
+                <div class="image-overlay">
+                    <h2>Atenas</h2>
+                </div>
+            </a>
+        </div>
+        
+        <div class="image-container">
+            <a href="public/Tokyo.html">
+                <img src="/public/assets/img/Tokyo.jpg" alt="Place 3">
+                <div class="image-overlay">
+                    <h2>Tokyo</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="public/Roma.html">
+                <img src="/public/assets/img/Roma.jpg" alt="Place 4">
+                <div class="image-overlay">
+                    <h2>Roma</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="public/Petra.html">
+                <img src="/public/assets/img/Petra.jpg" alt="Place 5">
+                <div class="image-overlay">
+                    <h2>Petra</h2>
+                </div>
+            </a>
+        </div>
+
+        <div class="image-container">
+            <a href="public/Rio_de_Janeiro.html">
+                <img src="/public/assets/img/Rio.jpeg" alt="Place 6">
+                <div class="image-overlay">
+                    <h2>Río de Janeiro</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <footer id="about" style="text-align: center;">
+      <p><i>Sky Food</i></p>
+      <p><i>Developed by Juan Camilo Arteaga Ibarra</i></p>
+      <p><i>camilo.arteaga1@udea.edu.co</i></p>
+      <p><i>© 2024 All Rights Reserved</i>></p>
     </footer>
-  </body>
+
+</body>
 </html>
