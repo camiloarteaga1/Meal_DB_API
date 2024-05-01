@@ -1,3 +1,3 @@
-# SkyFood a TheMealDB API Integration
+# Sky Food a TheMealDB API Integration
 
 By: Juan Camilo Arteaga Ibarra
