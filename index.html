@@ -1,21 +1,26 @@
 <!DOCTYPE html>
-<html lang="es" dir="ltr">
+<html lang="en" dir="ltr">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sky food</title>
-  <link rel="stylesheet" href="style1.css">
+  <title>Sky Food</title>
+  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <meta name="author" content="Camilo Arteaga">
-  <link rel="icon" href="https://img.icons8.com/material/24/beach--v1.png" type="image/x-icon">
+  <link rel="icon" href="public/assets/imgs/icon.png" type="image/x-icon">
+  <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+  <script src="main.js" defer></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
     <nav>
-      <div class="menu">
-        <div class="logo">
+      <div class="navi">
+        <div class="logo" id="home-logo">
           <a href="#">Sky Food</a>
         </div>
         <ul>
@@ -30,42 +35,46 @@
   <div class="img"></div>
   <div class="center">
     <div class="title">Sky Food</div>
-    <div class="sub_title">"Souls in your tongue"</div>
-    <div class="text">
+    <div class="sub_title">"souls in your tongue"</div>
+    <div class="text" id="finder">
       Find recipes from all over the world and enjoy the best dishes from the best chefs.
     </div>
   </div>
 
-  <div class="finder-container" id="finder">
-    <div class="finder">
-      <input class="input-plate" type="text" placeholder="Search your meal..." spellcheck="false"/>
-      <button id="search-field-btn" class="btn"><img src="/public/assets/imgs/magnifier.png" /></button>
-      <select id="option">
-        <option value="name">Meal name</option>
-        <option value="category">Category</option>
-        <option value="ingredient">Principal ingredient</option>
-        <option value="area">Area</option>
-      </select>
+  <main>
+    <div class="container">
+      <div class="finder">
+        <input class="input-plate" type="text" placeholder="Search your meal..." spellcheck="false"/>
+        <button id="search-field-btn" class="btn"><img src="/public/assets/imgs/magnifier.png" /></button>
+        <select id="option-criteria">
+          <option value="name">Meal name</option>
+          <option value="category">Category</option>
+          <option value="ingredient">Ingredient</option>
+          <option value="area">Area</option>
+        </select>
+      </div>
     </div>
-  </div>
 
   <!-- Container for image grid -->
-  <main>
-    <div class="error">
-      <p>Your search criteria was not found, try something else.</p>
-    </div>
-    <div class="menu">
-    </div>
-    <div class="menu1">
+    <div class="container-opts">
+      <div class="error">
+        <p>Your search criteria was not found... Try something else!</p>
+      </div>
+      <div class="menu">
+      </div>
+      <div class="menu1">
+      </div>
     </div>
   </main>
 
-  <footer id="about" style="text-align: center;">
-    <p><i>Sky Food</i></p>
-    <p><i>Developed by Juan Camilo Arteaga Ibarra</i></p>
-    <p><i>camilo.arteaga1@udea.edu.co</i></p>
-    <p><i>© 2024 All Rights Reserved</i>></p>
-  </footer>
+  <div class="footer-box">
+    <footer id="about" style="text-align: center;">
+      <p><i>Sky Food</i></p>
+      <p><i>Developed by Juan Camilo Arteaga Ibarra</i></p>
+      <p><i>camilo.arteaga1@udea.edu.co</i></p>
+      <p><i>© 2024 All Rights Reserved </i>></p>
+    </footer>
+  </div>
 
 </body>
 </html>
